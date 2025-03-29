@@ -97,16 +97,16 @@ DATABASES = {
 }
 
 # Local host db
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "learnfluid",
-        "USER": "yaswanth",
-        "PASSWORD": "zxcv",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "learnfluid",
+#         "USER": "yaswanth",
+#         "PASSWORD": "zxcv",
+#         "HOST": "localhost",
+#         "PORT": "5432",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
