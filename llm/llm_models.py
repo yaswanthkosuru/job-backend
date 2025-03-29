@@ -7,6 +7,6 @@ os.environ["GROQ_API_KEY"] = (
 )
 
 groq_lama_model = ChatGroq(
-    model="llama-3.1-70b-versatile",
+    model="llama-3.3-70b-versatile",
     temperature=0,
 )

@@ -9,6 +9,12 @@ from organisations.models import Organisation
 from jobpostings.models import JobPosting
 from applicants.models import JobApplication
 
+resume_file_urls=[
+    "https://drive.google.com/file/d/1HaAhS4NEk3p2eLpgEZP9kA98Ibl4eyYo/view?usp=sharing",
+    "https://drive.google.com/file/d/1uCEJeT0bt_Gh2dqvs7fmO4QOaxlPQq9m/view?usp=sharing"
+
+]
+
 class Command(BaseCommand):
     help = 'Seed the database with test data'
 
@@ -113,7 +119,7 @@ class Command(BaseCommand):
                 job_type=fake.random_element(elements=('Full-time', 'Part-time', 'Contract')),
                 expected_salary=random.randint(50000, 150000),
                 notice_period=random.randint(15, 90),
-                resume_file_url=fake.url()
+                resume_file_url=random.choice(resume_file_urls)
             )
             candidate.save()
             
