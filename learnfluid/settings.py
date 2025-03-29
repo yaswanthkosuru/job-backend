@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     "notifications",
     "organisations",
     "rest_framework",
-    "llm"
+    "llm",
 ]
 
 MIDDLEWARE = [
@@ -84,19 +84,17 @@ WSGI_APPLICATION = "learnfluid.wsgi.application"
 
 # Production Database
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "management",
-#         "USER": "7muetn",
-#         "PASSWORD": "xau_Qfhuk79luW8aNZDcNtfE7uZ6rqFo42ht6",
-#         "HOST": "us-east-1.sql.xata.sh",
-#         "PORT": "5432",
-#         "OPTIONS": {
-#             "sslmode": "require"
-#         }
-#     }
-# }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "management",
+        "USER": "7muetn",
+        "PASSWORD": "xau_Qfhuk79luW8aNZDcNtfE7uZ6rqFo42ht6",
+        "HOST": "us-east-1.sql.xata.sh",
+        "PORT": "5432",
+        "OPTIONS": {"sslmode": "require"},
+    }
+}
 
 # Local host db
 DATABASES = {
