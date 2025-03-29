@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-dhxun!1puo!sx)_beez75zq!!uw7mn4&$(1wa+c=9*$$grm!^(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["yaswanthkosuru-job-backend.hf.space"]
+ALLOWED_HOSTS = ["yaswanthkosuru-job-backend.hf.space","*"]
 
 
 # Application definition
