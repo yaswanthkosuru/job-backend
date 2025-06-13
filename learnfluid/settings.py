@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-dhxun!1puo!sx)_beez75zq!!uw7mn4&$(1wa+c=9*$$grm!^(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["yaswanthkosuru-job-backend.hf.space","*"]
+ALLOWED_HOSTS = ["yaswanthkosuru-job-backend.hf.space", "*"]
 
 
 # Application definition
@@ -84,29 +84,36 @@ WSGI_APPLICATION = "learnfluid.wsgi.application"
 
 # Production Database
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "management",
-        "USER": "7muetn",
-        "PASSWORD": "xau_Qfhuk79luW8aNZDcNtfE7uZ6rqFo42ht6",
-        "HOST": "us-east-1.sql.xata.sh",
-        "PORT": "5432",
-        "OPTIONS": {"sslmode": "require"},
-    }
-}
-
-# Local host db
 # DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "learnfluid",
-#         "USER": "yaswanth",
-#         "PASSWORD": "zxcv",
-#         "HOST": "localhost",
+#         "NAME": "management",
+#         "USER": "7muetn",
+#         "PASSWORD": "xau_Qfhuk79luW8aNZDcNtfE7uZ6rqFo42ht6",
+#         "HOST": "us-east-1.sql.xata.sh",
 #         "PORT": "5432",
+#         "OPTIONS": {"sslmode": "require"},
 #     }
 # }
+
+# Local host db
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "learnfluidv1",
+        "USER": "yaswanth",
+        "PASSWORD": "zxcv",
+        "HOST": "localhost",
+        "PORT": "5432",
+    }
+}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -156,6 +163,11 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     )
 }
+# REST_FRAMEWORK = {
+#     "DEFAULT_AUTHENTICATION_CLASSES": [
+#         "your_project.auth.SafeTokenAuthentication",
+#     ],
+# }
 
 from datetime import timedelta
 
